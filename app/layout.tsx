@@ -11,7 +11,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Danışmanım | Yurtdışı Eğitim Danışmanlığı",
   description: "Yeni Zelanda başta olmak üzere dünyanın farklı ülkelerinde lise, üniversite, dil okulu ve kariyer fırsatları için profesyonel eğitim danışmanlığı.",
-  keywords: ["yurtdışı eğitim", "eğitim danışmanlığı", "Yeni Zelanda", "üniversite", "dil okulu", "öğrenci danışmanlığı"],
+  keywords: ["yurtdışı eğitim", "eğitim danışmanlığı", "Yeni Zelanda", "üniversite", "dil okulu", "öğrenci danışmanlığı", "danışmanım"],
   authors: [{ name: "Danışmanım" }],
   openGraph: {
     title: "Danışmanım | Yurtdışı Eğitim Danışmanlığı",

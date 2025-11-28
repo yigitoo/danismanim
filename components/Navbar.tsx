@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FiMenu, FiX, FiGlobe, FiArrowRight } from 'react-icons/fi';
+import { FiMenu, FiX, FiArrowRight } from 'react-icons/fi';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -54,13 +54,14 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3 group">
             <motion.div
-              whileHover={{ rotate: 360, scale: 1.1 }}
-              transition={{ duration: 0.5 }}
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
               className="relative"
             >
-              <div className="absolute inset-0 bg-primary rounded-xl blur-lg opacity-30 group-hover:opacity-50 transition-opacity" />
-              <div className="relative p-2 bg-gradient-to-br from-primary to-primary-light rounded-xl">
-                <FiGlobe className="w-5 h-5 md:w-6 md:h-6 text-white" />
+              <div className="absolute inset-0 bg-primary rounded-lg blur-lg opacity-30 group-hover:opacity-50 transition-opacity" />
+              <div className="relative w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-primary to-primary-light rounded-lg flex items-center justify-center shadow-lg overflow-hidden">
+                <span className="text-white font-black text-2xl md:text-3xl italic tracking-tight" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>D</span>
+                <div className="absolute top-0 right-0 w-3 h-3 bg-white/20 rounded-bl-full" />
               </div>
             </motion.div>
             <div className="flex flex-col">

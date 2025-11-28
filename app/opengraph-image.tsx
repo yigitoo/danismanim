@@ -73,14 +73,37 @@ export default async function Image() {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              fontSize: '80px',
-              fontWeight: 'bold',
-              color: '#0D9488',
               marginBottom: '40px',
               boxShadow: '0 20px 60px rgba(0, 0, 0, 0.3)',
+              position: 'relative',
+              overflow: 'hidden',
             }}
           >
-            D
+            <div
+              style={{
+                fontSize: '100px',
+                fontWeight: 900,
+                fontStyle: 'italic',
+                letterSpacing: '-0.05em',
+                color: '#0D9488',
+                textShadow: '0 4px 8px rgba(13, 148, 136, 0.2)',
+                display: 'flex',
+              }}
+            >
+              D
+            </div>
+            <div
+              style={{
+                position: 'absolute',
+                top: 0,
+                right: 0,
+                width: '30px',
+                height: '30px',
+                background: 'rgba(13, 148, 136, 0.1)',
+                borderBottomLeftRadius: '30px',
+                display: 'flex',
+              }}
+            />
           </div>
 
           {/* Title */}
