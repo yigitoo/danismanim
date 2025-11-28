@@ -21,6 +21,11 @@ export const metadata: Metadata = {
     locale: "tr_TR",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Danışmanım | Yurtdışı Eğitim Danışmanlığı",
+    description: "Yeni Zelanda başta olmak üzere dünyanın farklı ülkelerinde lise, üniversite, dil okulu ve kariyer fırsatları için profesyonel eğitim danışmanlığı.",
+  },
 };
 
 export default function RootLayout({
