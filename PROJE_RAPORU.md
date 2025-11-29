@@ -1,9 +1,9 @@
 # Danışmanım Web Sitesi - Detaylı Proje Raporu
 
-**Proje Adı:** Danışmanım Yurtdışı Eğitim Danışmanlık Web Sitesi
-**Domain:** danismanim.co
-**Rapor Tarihi:** 29 Kasım 2025
-**Versiyon:** 1.0
+**Proje Adı:** Danışmanım Yurtdışı Eğitim Danışmanlık Web Sitesi <br>
+**Domain:** danismanim.co <br>
+**Rapor Tarihi:** 29 Kasım 2025 <br>
+**Versiyon:** 1.0 <br>
 
 ---
 
