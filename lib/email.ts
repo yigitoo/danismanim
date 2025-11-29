@@ -35,11 +35,11 @@ export async function sendContactEmail(data: ContactFormData) {
           <style>
             body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
             .container { max-width: 600px; margin: 0 auto; padding: 20px; }
-            .header { background: linear-gradient(135deg, #0D9488 0%, #14B8A6 100%); color: white; padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }
+            .header { background: linear-gradient(135deg, #402e48 0%, #61466e 100%); color: white; padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }
             .content { background: #f8f9fa; padding: 30px; border-radius: 0 0 10px 10px; }
             .field { margin-bottom: 20px; }
-            .label { font-weight: bold; color: #0D9488; margin-bottom: 5px; }
-            .value { background: white; padding: 12px; border-radius: 5px; border-left: 3px solid #0D9488; }
+            .label { font-weight: bold; color: #61466e; margin-bottom: 5px; }
+            .value { background: white; padding: 12px; border-radius: 5px; border-left: 3px solid #61466e; }
             .message-box { background: white; padding: 20px; border-radius: 5px; border-left: 3px solid #F59E0B; margin-top: 10px; }
             .footer { text-align: center; margin-top: 20px; padding: 20px; color: #666; font-size: 12px; }
           </style>
@@ -58,7 +58,7 @@ export async function sendContactEmail(data: ContactFormData) {
 
               <div class="field">
                 <div class="label">📧 E-posta:</div>
-                <div class="value"><a href="mailto:${email}" style="color: #0D9488; text-decoration: none;">${email}</a></div>
+                <div class="value"><a href="mailto:${email}" style="color: #61466e; text-decoration: none;">${email}</a></div>
               </div>
 
               <div class="field">

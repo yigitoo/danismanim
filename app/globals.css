@@ -3,9 +3,9 @@
 @theme {
   --color-background: #FAFBFC;
   --color-foreground: #0F172A;
-  --color-primary: #0D9488;
-  --color-primary-light: #14B8A6;
-  --color-primary-dark: #0F766E;
+  --color-primary: #61466e;
+  --color-primary-light: #8066a3;
+  --color-primary-dark: #402e48;
   --color-secondary: #F59E0B;
   --color-secondary-light: #FBBF24;
   --color-secondary-dark: #D97706;
@@ -22,9 +22,9 @@
 :root {
   --background: #FAFBFC;
   --foreground: #0F172A;
-  --primary: #0D9488;
-  --primary-light: #14B8A6;
-  --primary-dark: #0F766E;
+  --primary: #61466e;
+  --primary-light: #8066a3;
+  --primary-dark: #402e48;
   --secondary: #F59E0B;
   --secondary-light: #FBBF24;
   --secondary-dark: #D97706;
@@ -157,12 +157,12 @@ button { cursor: pointer; }
 .btn-primary {
   background: var(--gradient-primary);
   color: white;
-  box-shadow: 0 4px 14px 0 rgb(13 148 136 / 0.3);
+  box-shadow: 0 4px 14px 0 rgb(97 70 110 / 0.3);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px 0 rgb(13 148 136 / 0.4);
+  box-shadow: 0 6px 20px 0 rgb(97 70 110 / 0.4);
 }
 
 .btn-primary:active {
@@ -239,7 +239,7 @@ button { cursor: pointer; }
 
 .input:focus {
   border-color: var(--primary);
-  box-shadow: 0 0 0 4px rgb(13 148 136 / 0.1);
+  box-shadow: 0 0 0 4px rgb(97 70 110 / 0.1);
   outline: none;
 }
 
@@ -259,10 +259,10 @@ button { cursor: pointer; }
 
 @keyframes pulse-glow {
   0%, 100% {
-    box-shadow: 0 0 20px rgb(13 148 136 / 0.3);
+    box-shadow: 0 0 20px rgb(97 70 110 / 0.3);
   }
   50% {
-    box-shadow: 0 0 40px rgb(13 148 136 / 0.5);
+    box-shadow: 0 0 40px rgb(97 70 110 / 0.5);
   }
 }
 
@@ -296,7 +296,7 @@ button { cursor: pointer; }
   position: absolute;
   inset: 0;
   background-image:
-    radial-gradient(circle at 25% 25%, rgb(13 148 136 / 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 25% 25%, rgb(97 70 110 / 0.1) 0%, transparent 50%),
     radial-gradient(circle at 75% 75%, rgb(245 158 11 / 0.08) 0%, transparent 50%);
   pointer-events: none;
 }

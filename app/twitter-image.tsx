@@ -21,7 +21,7 @@ export default async function Image() {
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          background: 'linear-gradient(135deg, #0D9488 0%, #14B8A6 100%)',
+          background: 'linear-gradient(135deg, #402e48 0%, #61466e 100%)',
           position: 'relative',
         }}
       >
@@ -85,8 +85,8 @@ export default async function Image() {
                 fontWeight: 900,
                 fontStyle: 'italic',
                 letterSpacing: '-0.05em',
-                color: '#0D9488',
-                textShadow: '0 4px 8px rgba(13, 148, 136, 0.2)',
+                color: '#61466e',
+                textShadow: '0 4px 8px rgba(97, 70, 110, 0.2)',
                 display: 'flex',
               }}
             >
@@ -99,7 +99,7 @@ export default async function Image() {
                 right: 0,
                 width: '26px',
                 height: '26px',
-                background: 'rgba(13, 148, 136, 0.1)',
+                background: 'rgba(97, 70, 110, 0.1)',
                 borderBottomLeftRadius: '26px',
                 display: 'flex',
               }}

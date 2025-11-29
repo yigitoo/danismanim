@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import AdminNavbar from '@/components/AdminNavbar';
 
 export const metadata: Metadata = {
   title: 'Admin Panel | Danışmanım',
@@ -14,5 +15,10 @@ export default function AdminLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <div className="min-h-screen bg-background">
+      <AdminNavbar />
+      <main>{children}</main>
+    </div>
+  );
 }

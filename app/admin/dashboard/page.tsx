@@ -8,8 +8,6 @@ import {
   FiPlus,
   FiEdit2,
   FiTrash2,
-  FiGlobe,
-  FiLogOut,
   FiLoader,
   FiExternalLink,
 } from 'react-icons/fi';
@@ -87,10 +85,6 @@ export default function AdminDashboard() {
     }
   };
 
-  const handleLogout = () => {
-    localStorage.removeItem('adminToken');
-    router.push('/admin/login');
-  };
 
   // Show loading while checking authentication
   if (isCheckingAuth) {
@@ -111,56 +105,22 @@ export default function AdminDashboard() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <div className="bg-white shadow-sm border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3">
-              <FiGlobe className="w-8 h-8 text-primary" />
-              <div>
-                <h1 className="text-2xl font-bold text-foreground">
-                  Danışmanım
-                </h1>
-                <p className="text-sm text-gray-500">Admin Panel</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-4">
-              <Link
-                href="/"
-                target="_blank"
-                className="flex items-center gap-2 px-4 py-2 text-gray-600 hover:text-primary transition-colors"
-              >
-                <FiExternalLink className="w-5 h-5" />
-                <span className="hidden sm:inline">Siteyi Görüntüle</span>
-              </Link>
-              <button
-                onClick={handleLogout}
-                className="flex items-center space-x-2 px-4 py-2 text-gray-600 hover:text-red-600 transition-colors"
-              >
-                <FiLogOut className="w-5 h-5" />
-                <span>Çıkış</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="flex items-center justify-between mb-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6 sm:mb-8">
           <div>
-            <h2 className="text-3xl font-bold text-foreground">
+            <h2 className="text-2xl sm:text-3xl font-bold text-foreground">
               Blog Yazıları
             </h2>
-            <p className="text-gray-600 mt-1">
+            <p className="text-gray-600 mt-1 text-sm sm:text-base">
               Tüm blog yazılarınızı yönetin
             </p>
           </div>
           <Link
             href="/admin/posts/new"
-            className="flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-primary to-primary-light text-white rounded-lg font-medium hover:shadow-lg hover:scale-105 transition-all duration-200"
+            className="w-full sm:w-auto flex items-center justify-center space-x-2 px-4 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-primary to-primary-light text-white rounded-lg font-medium hover:shadow-lg hover:scale-105 transition-all duration-200 text-sm sm:text-base"
           >
-            <FiPlus className="w-5 h-5" />
+            <FiPlus className="w-4 h-4 sm:w-5 sm:h-5" />
             <span>Yeni Yazı</span>
           </Link>
         </div>
@@ -194,7 +154,8 @@ export default function AdminDashboard() {
           </motion.div>
         ) : (
           <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
-            <table className="min-w-full divide-y divide-gray-200">
+            <div className="overflow-x-auto">
+              <table className="min-w-full divide-y divide-gray-200">
               <thead className="bg-gray-50">
                 <tr>
                   <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
@@ -271,6 +232,7 @@ export default function AdminDashboard() {
                 ))}
               </tbody>
             </table>
+            </div>
           </div>
         )}
       </div>
