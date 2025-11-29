@@ -82,10 +82,7 @@ Danışmanım web sitesi, modern web teknolojileri kullanılarak sıfırdan geli
 
 #### Database: MongoDB Atlas
 - **Cloud Database:** Yönetilen bulut veritabanı
-- **Connection String:**
-  ```
-  mongodb+srv://yigitoo:templekiller09@database.9b8cfa3.mongodb.net/danismanim
-  ```
+- **Cluster Tier:** M0 Free Tier
 - **ODM:** Mongoose 8.x
 - **Collections:** BlogPost, (gelecekte User, Contact vb.)
 
@@ -1753,30 +1750,7 @@ No limit (authenticated only)
 
 **Database (MongoDB Atlas):**
 - Dashboard: https://cloud.mongodb.com
-- Support: https://www.mongodb.com/support
-
-**Storage (Supabase):**
-- Dashboard: https://app.supabase.com
-- Docs: https://supabase.com/docs
-
-### Dokümantasyon
-
-**Next.js:**
-- Docs: https://nextjs.org/docs
-- Learn: https://nextjs.org/learn
-
-**React:**
-- Docs: https://react.dev
-
-**Tailwind CSS:**
-- Docs: https://tailwindcss.com/docs
-
-**MongoDB:**
-- Docs: https://www.mongodb.com/docs
-
----
-
-## Ek Bilgiler
+- Support: https://www.# Ek Bilgiler
 
 ### Proje Dosya Yapısı
 
@@ -1964,7 +1938,7 @@ GMAIL_PASSWORD=app-specific-password
 - **MongoDB Dashboard:** https://cloud.mongodb.com
 - **Supabase Dashboard:** https://app.supabase.com
 - **Vercel Dashboard:** https://vercel.com/dashboard
-- **GitHub Repo:** [Your Repo URL]
+- **GitHub Repo:** https://github.com/yigitooz/danismanim
 
 ---
 
