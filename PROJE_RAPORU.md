@@ -82,10 +82,6 @@ Danışmanım web sitesi, modern web teknolojileri kullanılarak sıfırdan geli
 
 #### Database: MongoDB Atlas
 - **Cloud Database:** Yönetilen bulut veritabanı
-- **Connection String:**
-  ```
-  mongodb+srv://yigitoo:templekiller09@database.9b8cfa3.mongodb.net/danismanim
-  ```
 - **ODM:** Mongoose 8.x
 - **Collections:** BlogPost, (gelecekte User, Contact vb.)
 
