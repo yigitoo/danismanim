@@ -308,14 +308,14 @@ export default function AdminMeetingsPage() {
 
               <div className="md:col-span-2">
                 <label className="block text-sm font-medium text-foreground mb-2">
-                  Notlar
+                  Karşı Tarafa Not
                 </label>
                 <textarea
                   value={notes}
                   onChange={(e) => setNotes(e.target.value)}
                   className="input"
                   rows={3}
-                  placeholder="Randevu hakkında notlar..."
+                  placeholder="Randevu hakkında karşı tarafa bırakacağınız notlar..."
                 />
               </div>
 
